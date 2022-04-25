@@ -7,7 +7,7 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import SplashScreen from 'react-native-splash-screen';
 
 import Opening from './src/screen/opening';
-import Home from './src/screen/bottom-tabs/home';
+import BottomTabs from './src/screen/bottom-tabs';
 
 const Stack = createNativeStackNavigator();
 
@@ -31,7 +31,7 @@ const App = () => {
       <NavigationContainer>
         <Stack.Navigator>
           <Stack.Screen name="intro" component={Opening} />
-          <Stack.Screen name="home" component={Home} />
+          <Stack.Screen name="bottomtab" component={BottomTabs} />
         </Stack.Navigator>
       </NavigationContainer>
     </>

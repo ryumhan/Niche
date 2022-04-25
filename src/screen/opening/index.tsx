@@ -3,7 +3,7 @@ import {Image} from 'react-native';
 
 const Opening = ({navigation}: any) => {
   setTimeout(() => {
-    navigation.navigate('home');
+    navigation.navigate('bottomtab');
   }, 500);
   return <Image source={require('../../../image/emblem.jpeg')} />;
 };
