@@ -1,7 +1,8 @@
 import React from 'react';
-import {Image} from 'react-native';
+import {Alert, Image} from 'react-native';
 
 const Opening = ({navigation}: any) => {
+  Alert.alert('hello');
   setTimeout(() => {
     navigation.navigate('bottomtab');
   }, 500);
