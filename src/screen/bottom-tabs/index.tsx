@@ -10,8 +10,12 @@ const Tab = createBottomTabNavigator();
 function BottomTabs() {
   return (
     <Tab.Navigator>
-      <Tab.Screen name="Home" component={Home} />
-      <Tab.Screen name="Tactics" component={Tactics} />
+      <Tab.Screen name="Home" component={Home} options={{headerShown: false}} />
+      <Tab.Screen
+        name="Tactics"
+        component={Tactics}
+        options={{headerShown: false}}
+      />
       <Tab.Screen name="Details" component={Details} />
     </Tab.Navigator>
   );

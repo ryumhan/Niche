@@ -30,8 +30,16 @@ const App = () => {
       <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
       <NavigationContainer>
         <Stack.Navigator>
-          <Stack.Screen name="intro" component={Opening} />
-          <Stack.Screen name="bottomtab" component={BottomTabs} />
+          <Stack.Screen
+            name="intro"
+            component={Opening}
+            options={{headerShown: false}}
+          />
+          <Stack.Screen
+            name="bottomtab"
+            component={BottomTabs}
+            options={{headerShown: false}}
+          />
         </Stack.Navigator>
       </NavigationContainer>
     </>
