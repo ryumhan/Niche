@@ -7,7 +7,7 @@ const Ground = () => {
     <ImageBackground
       source={image}
       resizeMode={'stretch'}
-      style={{width: '100%', height: '100%', transform: [{rotate: '90deg'}]}}
+      style={{width: '100%', height: '100%'}}
     />
   );
 };

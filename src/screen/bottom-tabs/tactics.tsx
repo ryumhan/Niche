@@ -6,7 +6,7 @@ import Player from '../../components/tactics/Player';
 
 const Tactics = () => {
   return (
-    <View style={{width: '100%', height: '100%'}}>
+    <View style={{paddingTop: '20%', width: '100%', height: '100%'}}>
       <Ground />
       <Player />
       <Ball />
