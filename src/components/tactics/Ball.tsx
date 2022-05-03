@@ -8,13 +8,14 @@ interface IplayerProps {
 }
 
 const Ball = ({posX, posY}: IplayerProps) => {
+  const image = require('../../../image/ball.png');
   return (
     <Draggable
       x={posX ? posX : 200}
       y={posY ? posY : 200}
-      renderSize={15}
-      renderColor="blue"
+      renderSize={18}
       isCircle
+      imageSource={image}
     />
   );
 };
